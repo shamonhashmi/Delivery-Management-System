@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="mystyle.css" />
+    <title>My_delivery_Website</title>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="https://github.com/shamonhashmi"> My Projects</a>
+        <a href="https://www.linkedin.com/in/shamonhashmi/">Contact</a>
+        <div class="search-container">
+            <input type="text" placeholder="Search.." name="search" id="searchTxt" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+
+    <center class="main_heading">DELIVERY MANAGEMENT SYSTEM</center>
+    <br />
+
+    <div class="grid-container">
+
+        <div class="grid-item">
+            <img class="myimage" src="IMG_20210627_001124.png" alt="Map" />
+        </div>
+
+        <div class="grid-item">
+
+            <div class="grid-container2">
+
+                <div class="grid-items2">
+                    <label class="letters">House of Delivery</label>
+                </div>
+
+                <div class="grid-items2">
+                    <input list="houses" name="house" id="house" />
+                    <datalist id="houses">
+              <option value="0"></option>
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+              <option value="6"></option>
+              <option value="7"></option>
+              <option value="9"></option>
+              <option value="10"></option>
+              <option value="11"></option>
+              <option value="12"></option>
+              <option value="13"></option>
+              <option value="14"></option>
+              <option value="15"></option>
+              <option value="16"></option>
+              <option value="17"></option>
+              <option value="18"></option>
+            </datalist>
+
+                </div>
+
+            </div>
+            <br>
+
+            <div class="grid-container2">
+
+                <div class="grid-items2">
+                    <label class="letters">Location of Delivery Boy-1</label>
+                </div>
+
+                <div class="grid-items2">
+                    <input list="boy1" name="boy_1" id="boy_1" />
+                    <datalist id="boy1">
+                <option value="0"></option>
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="R"></option>
+                <option value="9"></option>
+                <option value="10"></option>
+                <option value="11"></option>
+                <option value="12"></option>
+                <option value="13"></option>
+                <option value="14"></option>
+                <option value="15"></option>
+                <option value="16"></option>
+                <option value="17"></option>
+                <option value="18"></option>
+              </datalist>
+
+                </div>
+
+            </div>
+            <br>
+
+            <div class="grid-container2">
+
+                <div class="grid-items2">
+                    <label class="letters">Location of Delivery Boy-2</label>
+                </div>
+
+                <div class="grid-items2">
+                    <input list="boy2" name="boy_2" id="boy_2" />
+                    <datalist id="boy2">
+                <option value="0"></option>
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="R"></option>
+                <option value="9"></option>
+                <option value="10"></option>
+                <option value="11"></option>
+                <option value="12"></option>
+                <option value="13"></option>
+                <option value="14"></option>
+                <option value="15"></option>
+                <option value="16"></option>
+                <option value="17"></option>
+                <option value="18"></option>
+              </datalist>
+
+                </div>
+
+            </div>
+            <br>
+
+            <div class="grid-container3">
+                <input type="submit" class="submit-btn2" value="GO" onclick="submit_function()" />
+                <input type="submit" class="submit-btn3" value="CLEAR" onclick="clear_function()" />
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="last_content">
+        <div class="half">
+            <div class="inner_half" id="boy1_boy2"></div>
+            <div class="inner_half" id="boy_distance">Please Fill All Required Field</div>
+            <div class="inner_half" id="path_boys"></div>
+        </div>
+
+        <div class="half">
+            <div class="inner_half" id="delivery_distance"></div>
+            <div class="inner_half" id="delivery_path"></div>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <center>Here "R" denotes the Restaurant, All the other numbers as Houses and All distances are in km</center>
+    <script src="myScript.js"></script>
+</body>
+
+</html>
